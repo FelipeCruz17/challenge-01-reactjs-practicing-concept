@@ -1,0 +1,82 @@
+.taskForm {
+  height: 3.375rem;
+
+  display: flex; 
+  justify-content: space-between;
+  gap: 0.5rem;
+    
+  margin-top: calc(-3.375rem / 2);
+}
+
+.taskForm input {
+  flex: 1;
+  height: 100%;
+  padding: 0 1rem;
+
+  color: var(--gray-100);
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+  font-size: 1rem;  
+}
+
+.taskForm > input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--purple);
+}
+
+.taskForm input::placeholder {
+  color: var(--gray-300)
+}
+
+.taskForm button {
+  height: 100%;
+  padding: 0 1rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.taskForm button:hover {
+  background: var(--blue);
+  transition: background-color 0.2s;
+}
+
+.mainContainer {
+  margin-top: 4rem;
+}
+
+.headerMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerMainContainer div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.headerMainContainer p {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.headerMainContainer div:nth-child(2) > p {
+  color: var(--purple);
+} 
+
+.headerMainContainer span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
